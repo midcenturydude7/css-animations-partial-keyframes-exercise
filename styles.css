@@ -26,7 +26,7 @@ body {
   padding: 16px;
   border: 1px solid hsl(210deg 15% 20%);
   border-radius: 4px;
-  background: url("/img/transparent-white-16x16-10p.png") repeat;
+  background: hsl(216, 5%, 18%);
 }
 
 .ball {
