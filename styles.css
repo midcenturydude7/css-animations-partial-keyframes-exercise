@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: hsl(210deg 15% 6%);
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 2rem;
+  padding: 16px;
+  border: 1px solid hsl(210deg 15% 20%);
+  border-radius: 4px;
+  background: url("/img/transparent-white-16x16-10p.png") repeat;
+}
+
+.ball {
+  background: hsl(50deg 100% 50%);
+  border-radius: 45%;
+  width: 64px;
+  height: 64px;
+}
+
+button {
+  padding: 16px;
+}
+
+@keyframes fadeToTransparent {
+  to {
+    opacity: 0;
+  }
+}
+
+.to-transparent {
+  animation: fadeToTransparent 1000ms forwards;
+}
